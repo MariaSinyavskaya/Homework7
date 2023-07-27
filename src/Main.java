@@ -15,8 +15,8 @@ public class Main {
         int deposit = 15000;
         double total = 0;
         int month = 0;
-        while (total < 2_459_000) {
-            total *= 1.01;
+        int needToSaveUp = 2_459_000;
+        while (total < needToSaveUp) {
             total += deposit;
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
@@ -55,7 +55,8 @@ public class Main {
         int amountOfSavings = 15000;
         int month = 0;
         double depositInterest = 0.07;
-        while (amountOfSavings < 12_000_000) {
+        int needToSaveUp = 12_000_000;
+        while (amountOfSavings < needToSaveUp) {
             amountOfSavings = (int) (amountOfSavings + amountOfSavings * depositInterest);
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + amountOfSavings + " рублей");
@@ -67,7 +68,8 @@ public class Main {
         int amountOfSavings = 15000;
         int month = 0;
         double depositInterest = 0.07;
-        while (amountOfSavings < 12_000_000) {
+        int needToSaveUp = 12_000_000;
+        while (amountOfSavings < needToSaveUp) {
             amountOfSavings = (int) (amountOfSavings + amountOfSavings * depositInterest);
             month++;
             if (month % 6 == 0) {
